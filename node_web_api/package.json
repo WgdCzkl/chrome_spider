@@ -1,0 +1,22 @@
+{
+  "name": "node_web_api",
+  "version": "1.0.0",
+  "description": "node_web_api for chrome extention ",
+  "main": "./zzc_list_web/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "api"
+  ],
+  "author": "xu wei",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^1.5.0",
+    "moment": "^2.10.6",
+    "mysql": "^2.16.0",
+    "superagent": "^1.8.5",
+    "superagent-jsonp": "^0.2.1"
+  }
+}
