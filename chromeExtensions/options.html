@@ -20,58 +20,18 @@
                 <button id="btn_open" type="button" class="btn btn_open  btn-primary btn-lg" style="display:none;">已开启爬虫</button>
                 <button id="btn_close" type="button" class="btn btn_close  btn-secondary btn-lg">已关闭爬虫</button>
             </div>
-
-            <div class="col-sm">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <input id="check_auto_spide" type="checkbox" aria-label="Checkbox for following text input">
-                        </div>
-                    </div>
-                    <span class="input-group-text">开启自动爬取</span>
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">
-                            <input id="check_auto_save" type="checkbox" aria-label="Checkbox for following text input">
-                        </div>
-                    </div>
-                    <span class="input-group-text">三字码自动补充</span>
-                </div>
-            </div>
-
-            <div class="col-sm">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <label class="input-group-text" for="input_env">环境</label>
-                    </div>
-                    <select class="custom-select" id="input_env">                               
-                                                      <option value="http://bl.huizuche.com:5000/" selected>堡垒环境（测试）</option>
-                                                      <option value="http://bl.huizuche.com:5001/">生产环境（生产）</option>
-                                                      <option value="http://localhost:5000/">开发环境（本地）</option>
-                                                    </select>
-                </div>
-
-            </div>
-            <div class="col-sm">
-                <button id="btn_clear" type="button" class="btn btn-primary btn-lg">清空爬取历史</button>
-            </div>
-
         </div>
 
 
 
-        <table id="table" data-search="true" data-page-size="100" data-page-number="1" data-pagination="true" data-page-list="[10,25, 50, 100,500]">
+        <table id="table" data-search="true" data-page-size="10" data-page-number="1" data-pagination="true" data-page-list="[10,25, 50, 100,500]">
             <thead>
                 <tr>
-                    <th data-field="country_name" data-sortable="true">国家</th>
-                    <th data-field="city_name" data-sortable="true">城市</th>
-                    <th data-field="place_id" data-sortable="true">三字码</th>
+                    <th data-field="region_name_cn" data-sortable="true">国家</th>
+                    <th data-field="city_name_cn" data-sortable="true">城市</th>
+                    <th data-field="landmarki_count" data-sortable="true">总数</th>
+                    <th data-field="spide_count" data-sortable="true">已爬</th>
                     <th data-field="spide_time" data-sortable="true">爬取时间</th>
-                    <th data-field="is_spide" data-sortable="true" data-align="center">是否爬取</th>
                     <th data-field="action" data-align="center" data-formatter="actionFormatter" data-events="actionEvents">操作</th>
                 </tr>
             </thead>

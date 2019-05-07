@@ -17,6 +17,24 @@ config._82 = {
     dateStrings: true
 };
 
+config._staging = {
+    host: 'rm-bp10ovg057h4a079iso.mysql.rds.aliyuncs.com',
+    user: 'net_application',
+    password: 'JqHPXGQu*Y#!^r9',
+    database: '',
+    port: 3306,
+    dateStrings: true
+};
+config._staging_911 = {
+    host: 'rm-bp10ovg057h4a079i.mysql.rds.aliyuncs.com',
+    user: 'net_application',
+    password: 'JqHPXGQu*Y#!^r9',
+    database: '',
+    port: 3306,
+    dateStrings: true
+};
+
+
 config._prod_backup = {
     host: '115.29.244.141',
     user: 'usr_yunying',
